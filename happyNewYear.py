@@ -24,7 +24,7 @@ class WeChatGreeting:
             self.logger.error(f"微信初始化失败: {str(e)}")
             raise
 
-    def load_friends(self, friends_file='friends.json'):
+    def load_friends(self, friends_file='friend.json'):
         """从JSON文件加载好友列表和对应的祝福语"""
         try:
             with open(friends_file, 'r', encoding='utf-8') as f:
